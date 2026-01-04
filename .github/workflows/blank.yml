@@ -2,7 +2,7 @@ name: "GitHub Action Demo triggered by"
 on: workflow_dispatch
 jobs:
   action-demo:
-    runs-on: ubuntu-latest
+    runs-on: demo-runner
     steps:
       - name: Checkout the code
         uses: actions/checkout@v4
