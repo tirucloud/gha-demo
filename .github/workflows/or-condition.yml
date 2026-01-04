@@ -5,5 +5,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Run for tiru form tirucloud
-        if: github.actor == 'Hari' || github.actor == 'tiru'
+        if: github.actor == 'god' || github.actor == 'tiru'
         run: echo "It is triggered by either god or tiru"
