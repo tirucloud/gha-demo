@@ -1,8 +1,12 @@
 name: "GitHub Action Demo triggered by"
-on: workflow_dispatch
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
 jobs:
   action-demo:
-    runs-on: self-hosted
+    runs-on: demo-runner
     steps:
       - name: Checkout the code
         uses: actions/checkout@v4
